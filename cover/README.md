@@ -2,15 +2,17 @@
 
 Program should read data from standard input. The data is a sequence of integers.
 Data denoted in BNF notation:
-> Dane ::= { Zbiór | Zapytanie }
-> Zbiór ::= { Składnik } 0
-> Składnik ::= Element | Nieskończony | Skończony
-> Element ::= d
-> Nieskończony ::= d u
-> Skończony ::= d u u
-> Zapytanie ::= u d
+```
+Dane ::= { Zbiór | Zapytanie }
+Zbiór ::= { Składnik } 0
+Składnik ::= Element | Nieskończony | Skończony
+Element ::= d
+Nieskończony ::= d u
+Skończony ::= d u u
+Zapytanie ::= u d
+```
 
-![eq1](https://latex.codecogs.com/gif.latex?d&space;\in&space;\mathbb{N}\setminus&space;\{0\}&space;\\&space;but&space;\&space;d&space;\&space;in&space;\&space;Zapytanie&space;\&space;\in&space;\{1,2,3\}\\&space;u&space;\in&space;\mathbb{Z}_{-}\\&space;Zbior&space;\&space;(set)&space;\&space;is&space;\&space;a&space;\&space;sum&space;\&space;of&space;\&space;subsets:\\&space;*&space;a&space;\&space;-the&space;\&space;subset&space;\&space;is&space;\&space;\{a\}\\&space;*&space;a&space;\&space;b&space;\&space;-the&space;\&space;subset&space;\&space;is&space;\&space;\{x|x&space;=&space;a&space;-b*k&space;\&space;for\&space;k\in\mathbb{N}\}\\&space;*&space;a&space;\&space;b&space;\&space;c&space;\&space;-the&space;\&space;subset&space;\&space;is&space;\&space;\{x|x&space;=&space;a&space;-b*k&space;\&space;for\&space;k\in\mathbb{N}\&space;\wedge&space;x&space;\leq&space;-c&space;\}\\)
+![Image](https://github.com/kozakusek/gif.gif)
 
 Consecutive sets are enumerated and added to create a bigger set.
 Zbiór describes a set, and Zapytanie is an inquiry.
@@ -23,11 +25,11 @@ Inquiry consist of elements `a` `b`:
 	* 1
 		* precise algorithm – brute force / checks all possible covers
 * `a` describes a set to be covered:
-	* ![eq2](https://latex.codecogs.com/gif.latex?\{x\in\mathbb{N}|1\leq&space;x&space;\leq-a&space;\})
+	* {![eq](https://latex.codecogs.com/gif.latex?\{x\in\mathbb{N}|1\leq&space;x&space;\leq-a&space;\})}
 
 ### Example
 
-*Input
+Input
 ```
 2 0
 
@@ -50,7 +52,7 @@ Inquiry consist of elements `a` `b`:
 -6 2
 -6 1
 ```
-*Output
+Output
 ```
 0
 1 2 5

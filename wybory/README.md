@@ -1,7 +1,7 @@
 # Election
 
-* Second project from PO
-* Description is in file `Programowanie Obiektowe Zad. 2 wer. 1.03.pdf`
+* The second project from PO
+* Description is in the file `Programowanie Obiektowe Zad. 2 wer. 1.03.pdf`
 
 ### Disclaimer
 
