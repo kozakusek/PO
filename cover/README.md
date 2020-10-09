@@ -12,7 +12,7 @@ Skończony ::= d u u
 Zapytanie ::= u d
 ```
 
-![Image](https://github.com/kozakusek/gif.gif)
+![Image](https://github.com/kozakusek/PO/blob/main/cover/gif.gif)
 
 Consecutive sets are enumerated and added to create a bigger set.
 Zbiór describes a set, and Zapytanie is an inquiry.
